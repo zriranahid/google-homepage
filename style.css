@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    width: 80%;
+}
+
+
+
+nav .group-1 {
+    display: flex;
+    color: #5d5d5f;
+    position: absolute;
+    left: 1rem;
+    top: 1.4rem;
+
+}
+
+nav .group-1 li {
+    padding: 0 .4rem;
+}
+
+nav .group-2 {
+    display: flex;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+
+nav .group-2 li {
+    padding: 0 .5rem;
+}
+
+.grid img {
+    height: 18px;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-left: .5rem;
+}
+
+.grid img:hover {
+    opacity: 1;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body {
+    display: grid;
+}
+
+.logo {
+    margin: 8rem auto 1.5rem auto;
+}
+
+.container {
+    position: relative;
+    width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    position: relative;
+    font-size: 16px;
+    width: 36rem;
+    padding: 0 3rem;
+    height: 2.8rem;
+    border-radius: 25px;
+    outline: none;
+    border: .05rem solid rgb(218, 216, 216);
+}
+
+input:hover {
+    border: .05rem solid rgb(218, 216, 216);
+    box-shadow: 0 0 .5rem rgba(33, 33, 33, .2);
+}
+
+.sign-in a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.sign-in {
+    background-color: rgb(69, 133, 243);
+    border-radius: .1rem;
+    border: none;
+    padding: .45rem .8rem;
+
+}
+
+.container .mic-icon img {
+    height: 20px;
+    position: absolute;
+    top: .9rem;
+    right: 1rem;
+
+}
+
+.search-icon img {
+    top: .9rem;
+    left: 1rem;
+    position: absolute;
+    height: 20px;
+    opacity: .45;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.btns-2 {
+    outline: none;
+    border: 1px solid transparent;
+    line-height: 27px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #F8F9FA;
+    cursor: pointer;
+    height: 2.3rem;
+    width: 8rem;
+    margin: 0 .2rem;
+    font-weight: 200;
+    color: rgb(44, 44, 44);
+    border-radius: 3px;
+}
+
+
+.btns-2:hover {
+    border: 1px solid #d0d0d0;
+    box-shadow: .05rem .05rem rgb(231, 231, 231);
+}
+
+
+/* footer styling and it's elements */
+
+footer {
+    font-size: 14px;
+    border-top: .05rem solid #DADCE0;
+    background-color: #F2F2F2;
+    color: #70757A;
+}
+
+footer {
+    /* 805px and higher */
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.f-grp-r {
+    display: flex;
+    margin: .8rem 1.5rem;
+}
+
+.f-grp-l {
+    display: flex;
+    margin: .8rem 1.5rem;
+}
+
+.f-grp-r li {
+    padding: 0 1rem;
+
+}
+
+.f-grp-l li {
+    padding: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 26rem;
+    }
+
+    .container .mic-icon img {
+
+        right: 1rem;
+
+    }
+
+    .search-icon img {
+        left: 1rem;
+
+    }
+
+    input {
+        width: 26rem;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
